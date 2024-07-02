@@ -1,8 +1,37 @@
-# React + Vite
+# eVoting Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a decentralized eVoting platform built with Vite, React, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User registration with wallet creation
+- User login
+- Proposal submission
+- Voting on proposals
+- Viewing voting results
+- Token management
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-URL>
+   cd evoting-platform
+
+
+2. Switch to the Vite branch:
+    git checkout vite-branch
+
+3. Install dependencies:
+    npm install
+
+4. Configure environment variables:
+Create a .env file in the root of the project and add your MongoDB connection string and encryption password:
+    MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/evoting?retryWrites=true&w=majority
+ENCRYPTION_PASSWORD=your-encryption-password
+
+5. Run the development server:
+    npm run dev
+
+6. Open http://localhost:5173 in your browser.
+

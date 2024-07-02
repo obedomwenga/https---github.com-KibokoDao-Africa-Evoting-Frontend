@@ -1,3 +1,6 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -7,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // Replace <username>, <password>, and <dbname> with your actual database user and database name
-const mongoUri = "mongodb+srv://obedomwenga:4o8cH91d2Z6aXHq4@cluster0.3p2lcl5.mongodb.net/evoting?retryWrites=true&w=majority";
+const mongoUri = process.env.MONGODB_URI;
 
 mongoose.connect(mongoUri)
     .then(() => console.log('MongoDB connected...'))
